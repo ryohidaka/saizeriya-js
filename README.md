@@ -7,7 +7,7 @@
 
 ## Overview
 
-
+サイゼリヤのメニューを取得する Node.js ライブラリ
 
 ## Notes
 
