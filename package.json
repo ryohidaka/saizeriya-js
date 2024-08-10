@@ -1,7 +1,7 @@
 {
-  "name": "npm-package-template",
-  "version": "0.1.0",
-  "description": "Minimum configuration template for publishing packages to npm.",
+  "name": "saizeriya",
+  "version": "0.0.0",
+  "description": "",
   "type": "module",
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
@@ -26,14 +26,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryohidaka/npm-package-template.git"
+    "url": "git+https://github.com/ryohidaka/saizeriya.git"
   },
   "author": "ryohidaka",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ryohidaka/npm-package-template/issues"
+    "url": "https://github.com/ryohidaka/saizeriya/issues"
   },
-  "homepage": "https://github.com/ryohidaka/npm-package-template#readme",
+  "homepage": "https://github.com/ryohidaka/saizeriya#readme",
   "devDependencies": {
     "@types/node": "^20.14.10",
     "@vitest/coverage-v8": "^1.6.0",
