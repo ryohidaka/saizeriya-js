@@ -1,0 +1,49 @@
+{
+  "name": "npm-package-template",
+  "version": "0.1.0",
+  "description": "Minimum configuration template for publishing packages to npm.",
+  "type": "module",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build --emptyOutDir false",
+    "preview": "vite preview",
+    "prepare": "npx husky install",
+    "test": "VITEST_MIN_THREADS=6 VITEST_MAX_THREADS=6 vitest run --passWithNoTests",
+    "coverage": "vitest run --coverage",
+    "format": "npx prettier . --write",
+    "docs": "npx typedoc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryohidaka/npm-package-template.git"
+  },
+  "author": "ryohidaka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryohidaka/npm-package-template/issues"
+  },
+  "homepage": "https://github.com/ryohidaka/npm-package-template#readme",
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@vitest/coverage-v8": "^1.6.0",
+    "eslint": "^9.6.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-n": "^17.9.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.3.3",
+    "vite-plugin-dts": "^3.9.1",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^1.4.0"
+  }
+}

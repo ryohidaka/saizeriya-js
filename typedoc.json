@@ -1,0 +1,11 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "disableSources": true,
+  "entryPoints": ["./src"],
+  "exclude": ["./src/example/*", "./src/vite-env.d.ts"],
+  "hideGenerator": true,
+  "navigationLinks": {
+    "GitHub": "https://github.com/ryohidaka/npm-package-template",
+    "npm": "https://www.npmjs.com/package/npm-package-template"
+  }
+}
