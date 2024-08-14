@@ -40,3 +40,31 @@ export type Category = {
  * ジャンル
  */
 export type Genre = string;
+
+/**
+ * メニューの絞り込み条件のパラメータ
+ */
+export type SaizeriyaMenuParams = {
+  // 税抜価格 (最小)
+  priceMin?: number;
+  // 税抜価格 (最大)
+  priceMax?: number;
+  // 税込価格 (最小)
+  priceWithTaxMin?: number;
+  // 税込価格 (最大)
+  priceWithTaxMax?: number;
+  // カテゴリ名
+  categories?: string[];
+  // メニュー名
+  name?: string;
+  // エネルギー (最小)
+  calorieMin?: number;
+  // エネルギー (最大)
+  calorieMax?: number;
+  // 食塩相当量 (最小)
+  saltMin?: number;
+  // 食塩相当量 (最大)
+  saltMax?: number;
+  // ジャンル名
+  genres?: string[];
+};

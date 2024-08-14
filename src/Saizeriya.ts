@@ -1,5 +1,5 @@
-import { fetchMenus, getCategories, getGenres } from "./lib";
-import { Category, Menu } from "./types";
+import { fetchMenus, getCategories, getFilteredMenus, getGenres } from "./lib";
+import { Category, Menu, SaizeriyaMenuParams } from "./types";
 
 /**
  * サイゼリヤのメニューを管理するクラス
@@ -25,16 +25,19 @@ export class Saizeriya {
   }
 
   /**
-   * 全てのメニューを取得する
-   * @returns メニューの配列
+   * 条件に合う全てのメニューを取得する
+   * @param params - フィルタリングの条件
+   * @returns フィルタリングされたメニューの配列
    */
-  async all(): Promise<Menu[]> {
+  async all(params?: SaizeriyaMenuParams): Promise<Menu[]> {
     // メニューリストが空の場合、メニューをロードする
     if (this.menus.length === 0) {
       await this.loadMenus();
     }
 
-    return this.menus;
+    let menus = this.menus;
+
+    return getFilteredMenus(menus, params);
   }
 
   /**
