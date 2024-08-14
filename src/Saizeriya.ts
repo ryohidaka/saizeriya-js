@@ -1,4 +1,4 @@
-import { fetchMenus, getCategories } from "./lib";
+import { fetchMenus, getCategories, getGenres } from "./lib";
 import { Category, Menu } from "./types";
 
 /**
@@ -48,5 +48,18 @@ export class Saizeriya {
     }
 
     return getCategories(this.menus);
+  }
+
+  /**
+   * 全てのジャンルを取得する
+   * @returns ジャンルの配列
+   */
+  async genres(): Promise<string[]> {
+    // メニューリストが空の場合、メニューをロードする
+    if (this.menus.length === 0) {
+      await this.loadMenus();
+    }
+
+    return getGenres(this.menus);
   }
 }
