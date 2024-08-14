@@ -62,4 +62,18 @@ export class Saizeriya {
 
     return getGenres(this.menus);
   }
+
+  /**
+   * 指定したIDに対応するメニューを取得する
+   * @param id - メニューのID
+   * @returns 指定したIDのメニュー、見つからない場合はundefined
+   */
+  async getById(id: number): Promise<Menu | undefined> {
+    // メニューリストが空の場合、メニューをロードする
+    if (this.menus.length === 0) {
+      await this.loadMenus();
+    }
+
+    return this.menus.find((menu) => menu.id === id);
+  }
 }
