@@ -1,5 +1,5 @@
-import { fetchMenus } from "./lib";
-import { Menu } from "./types";
+import { fetchMenus, getCategories } from "./lib";
+import { Category, Menu } from "./types";
 
 /**
  * サイゼリヤのメニューを管理するクラス
@@ -35,5 +35,18 @@ export class Saizeriya {
     }
 
     return this.menus;
+  }
+
+  /**
+   * 全てのカテゴリを取得する
+   * @returns カテゴリの配列
+   */
+  async categories(): Promise<Category[]> {
+    // メニューリストが空の場合、メニューをロードする
+    if (this.menus.length === 0) {
+      await this.loadMenus();
+    }
+
+    return getCategories(this.menus);
   }
 }

@@ -2,6 +2,7 @@ import "./style.css";
 import typescriptLogo from "./typescript.svg";
 import viteLogo from "/vite.svg";
 import { setupCounter } from "./counter.ts";
+import { Saizeriya } from "@/Saizeriya.ts";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
@@ -22,3 +23,9 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 `;
 
 setupCounter(document.querySelector<HTMLButtonElement>("#counter")!);
+
+const saizeriya = new Saizeriya();
+
+// カテゴリ一覧
+const categories = saizeriya.categories();
+console.log(categories);
