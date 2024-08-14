@@ -22,6 +22,18 @@ export class Saizeriya {
    */
   private async loadMenus() {
     this.menus = await fetchMenus();
-    console.log(this.menus);
+  }
+
+  /**
+   * 全てのメニューを取得する
+   * @returns メニューの配列
+   */
+  async all(): Promise<Menu[]> {
+    // メニューリストが空の場合、メニューをロードする
+    if (this.menus.length === 0) {
+      await this.loadMenus();
+    }
+
+    return this.menus;
   }
 }
