@@ -1,0 +1,46 @@
+import { Menu } from "@/types";
+import { describe, it, expect } from "vitest";
+import { getGenres } from "./genre";
+
+const mockMenus: Menu[] = [
+  {
+    calorie: 192,
+    category: "グランド",
+    categoryEn: "Grand Menu",
+    categoryZh: "主",
+    genre: "サラダ",
+    id: 1202,
+    name: "小エビのサラダ",
+    nameEn: "Shrimp Salad",
+    nameZh: "小甜虾沙拉",
+    price: 319,
+    priceWithTax: 350,
+    salt: 1.5,
+  },
+  {
+    calorie: 154,
+    category: "グランド",
+    categoryEn: "Grand Menu",
+    categoryZh: "主",
+    genre: "スープ",
+    id: 1301,
+    name: "コーンクリームスープ",
+    nameEn: "Creamy Corn Soup",
+    nameZh: "奶油玉米浓汤",
+    price: 137,
+    priceWithTax: 150,
+    salt: 1,
+  },
+];
+
+describe("getGenres", () => {
+  it("ジャンルを正しく取得できるか", () => {
+    const genres = getGenres(mockMenus);
+    expect(genres).toEqual(["サラダ", "スープ"]);
+  });
+
+  it("空の配列を渡した場合、空の配列が返るか", () => {
+    const genres = getGenres([]);
+    expect(genres).toEqual([]);
+  });
+});
