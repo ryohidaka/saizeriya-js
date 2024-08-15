@@ -1,6 +1,6 @@
 {
   "name": "saizeriya",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "サイゼリヤのメニューを取得する Node.js ライブラリ",
   "keywords": [
     "japan",
