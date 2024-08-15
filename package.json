@@ -1,7 +1,13 @@
 {
   "name": "saizeriya",
   "version": "0.0.0",
-  "description": "",
+  "description": "サイゼリヤのメニューを取得する Node.js ライブラリ",
+  "keywords": [
+    "japan",
+    "japanaese",
+    "restaurant",
+    "saizeriya"
+  ],
   "type": "module",
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
@@ -28,7 +34,7 @@
     "type": "git",
     "url": "git+https://github.com/ryohidaka/saizeriya.git"
   },
-  "author": "ryohidaka",
+  "author": "ryohidaka <39184410+ryohidaka@users.noreply.github.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ryohidaka/saizeriya/issues"
