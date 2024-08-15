@@ -1,17 +1,26 @@
-import { Saizeriya } from "@/Saizeriya.ts";
+import { FilterForm } from "./filter-form.ts";
+import { MenuTable } from "./menu-table.ts";
+import { SaizeriyaMenuParams } from "../index.ts";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
-  <div>
-    
+  <div class="container text-start">
+    <div id="filter-form"></div>
+    <div id="menu-table"></div>
   </div>
 `;
 
-const saizeriya = new Saizeriya();
+const renderTable = async (params?: SaizeriyaMenuParams) => {
+  document.querySelector<HTMLDivElement>("#menu-table")!.innerHTML =
+    await MenuTable({ params });
+};
 
-// カテゴリ一覧
-const categories = saizeriya.categories();
-console.log(categories);
+(async () => {
+  const filterFormHtml = await FilterForm({
+    onFilter: renderTable,
+  });
+  document.querySelector<HTMLDivElement>("#filter-form")!.innerHTML =
+    filterFormHtml;
+})();
 
-// ジャンル一覧
-const genres = await saizeriya.genres();
-console.log(genres);
+// 初期テーブルの表示
+renderTable();
