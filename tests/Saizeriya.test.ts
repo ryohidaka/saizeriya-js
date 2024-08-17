@@ -48,4 +48,8 @@ describe("Saizeriya", () => {
     const menu = await saizeriya.getById(9999);
     expect(menu).toBeUndefined();
   });
+
+  it("ランダムな組み合わせを返すこと", async () => {
+    await saizeriya.random();
+  });
 });
