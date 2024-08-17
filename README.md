@@ -41,6 +41,9 @@ const genres = await saizeriya.genres();
 
 // 特定のIDに対応するメニューを取得
 const menu = await saizeriya.getById(1);
+
+// ランダムなメニューの組み合わせを取得
+const randomMenus = await saizeriya.random();
 ```
 
 ## メソッド
