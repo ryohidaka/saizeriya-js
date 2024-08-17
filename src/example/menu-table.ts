@@ -8,6 +8,8 @@ type MenuTableProps = {
 export async function MenuTable({ params }: MenuTableProps) {
   const saizeriya = new Saizeriya();
   const menus = await saizeriya.all(params);
+  const randomMenus = await saizeriya.random();
+  console.log(randomMenus);
 
   return `
     <table class="table table-striped">

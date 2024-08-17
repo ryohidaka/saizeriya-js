@@ -1,5 +1,11 @@
-import { fetchMenus, getCategories, getFilteredMenus, getGenres } from "./lib";
-import { Category, Menu, SaizeriyaMenuParams } from "./types";
+import {
+  fetchMenus,
+  getCategories,
+  getFilteredMenus,
+  getGenres,
+  getRandomMenus,
+} from "./lib";
+import { Category, Menu, RandomMenus, SaizeriyaMenuParams } from "./types";
 
 /**
  * サイゼリヤのメニューを管理するクラス
@@ -78,5 +84,22 @@ export class Saizeriya {
     }
 
     return this.menus.find((menu) => menu.id === id);
+  }
+
+  /**
+   * 指定した総額に対応するランダムなメニューの組み合わせを取得する
+   * @param params - フィルタリングの条件
+   * @param maxSum - 総額の上限 (デフォルト: `1000`)
+   * @param allowDuplicates - 重複許容フラグ (デフォルト: `true`)
+   * @returns ランダムな組み合わせ
+   */
+  async random(
+    params?: SaizeriyaMenuParams,
+    maxSum: number = 1000,
+    allowDuplicates: boolean = true,
+  ): Promise<RandomMenus> {
+    const menus = await this.all(params);
+
+    return getRandomMenus(menus, maxSum, allowDuplicates);
   }
 }

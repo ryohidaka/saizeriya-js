@@ -99,6 +99,20 @@ const menu = await saizeriya.getById(1);
 
 - `Menu`: メニューオブジェクト。見つからない場合は`undefined`。
 
+### `random(params?: SaizeriyaMenuParams, maxSum: number = 1000, allowDuplicates: boolean = true,): Promise<RandomMenus> `
+
+指定した総額に対応するランダムなメニューの組み合わせを取得します。
+
+#### 引数
+
+- `params`: フィルタリングの条件
+- `maxSum`: 総額の上限 (デフォルト: `1000`)
+- `allowDuplicates`: 重複許容フラグ (デフォルト: `true`)
+
+#### レスポンス
+
+- `RandomMenus`: ランダムなメニューの組み合わせオブジェクト。
+
 ## 型定義
 
 ### `Menu`
@@ -129,6 +143,15 @@ const menu = await saizeriya.getById(1);
 ### `Genre`
 
 `string`: ジャンル名
+
+### `RandomMenus`
+
+| フィールド          | 型     | 説明                       |
+| ------------------- | ------ | -------------------------- |
+| `menus`             | Menu[] | 組み合わせ内のメニュー一覧 |
+| `totalSalt`         | number | 食塩相当量の総額           |
+| `totalCalorie`      | number | エネルギーの総額           |
+| `totalPriceWithTax` | number | 税込価格の総額             |
 
 ## Link
 
