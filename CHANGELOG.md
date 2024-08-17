@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.0](https://github.com/ryohidaka/saizeriya/compare/v0.1.0...v0.2.0) (2024-08-17)
+
+
+### Features
+
+* items-picker をインストール ([42586b7](https://github.com/ryohidaka/saizeriya/commit/42586b7f75b1d61ed46192f7e138b99d63fdc362))
+* ランダムなメニューの組み合わせ取得処理(`random()`) を追加 ([e20c904](https://github.com/ryohidaka/saizeriya/commit/e20c904bc548cca84270c8ec6ce12912a525cd99))
+
 ## 0.1.0 (2024-08-15)
 
 
