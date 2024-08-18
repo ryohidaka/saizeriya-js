@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/ryohidaka/saizeriya/compare/v0.2.0...v0.2.1) (2024-08-18)
+
+
+### Bug Fixes
+
+* 食塩相当量の総額を小数点第二位までに修正 ([41d51c3](https://github.com/ryohidaka/saizeriya/commit/41d51c318f7473a03ace40de87ef3414b4772764))
+
 ## [0.2.0](https://github.com/ryohidaka/saizeriya/compare/v0.1.0...v0.2.0) (2024-08-17)
 
 
