@@ -23,9 +23,8 @@ export function getRandomMenus(
   );
 
   // 食塩相当量の総額を取得する
-  const totalSalt = randomMenus.reduce(
-    (sum, menu) => sum + (menu.salt ?? 0),
-    0,
+  const totalSalt = parseFloat(
+    randomMenus.reduce((sum, menu) => sum + (menu.salt ?? 0), 0).toFixed(2),
   );
 
   // エネルギーの総額を取得する
