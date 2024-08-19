@@ -56,21 +56,6 @@ const randomMenus = await saizeriya.random();
 
 - `params`（オプション）: フィルタリング条件
 
-| パラメータ        | 型       | 説明                |
-| ----------------- | -------- | ------------------- |
-| `priceMin`        | number   | 税抜価格 (最小)     |
-| `priceMax`        | number   | 税抜価格 (最大)     |
-| `priceWithTaxMin` | number   | 税込価格 (最小)     |
-| `priceWithTaxMax` | number   | 税込価格 (最大)     |
-| `categories`      | string[] | カテゴリ名          |
-| `name`            | string   | メニュー名          |
-| `calorieMin`      | number   | エネルギー (最小)   |
-| `calorieMax`      | number   | エネルギー (最大)   |
-| `saltMin`         | number   | 食塩相当量 (最小)   |
-| `saltMax`         | number   | 食塩相当量 (最大)   |
-| `genres`          | string[] | ジャンル名          |
-| `excludedMenuIds` | number[] | 除外するメニュー ID |
-
 #### レスポンス
 
 - `Menu[]`: メニューの配列
@@ -118,6 +103,23 @@ const randomMenus = await saizeriya.random();
 - `RandomMenus`: ランダムなメニューの組み合わせオブジェクト。
 
 ## 型定義
+
+### `SaizeriyaMenuParams`
+
+| パラメータ        | 型       | 説明                |
+| ----------------- | -------- | ------------------- |
+| `priceMin`        | number   | 税抜価格 (最小)     |
+| `priceMax`        | number   | 税抜価格 (最大)     |
+| `priceWithTaxMin` | number   | 税込価格 (最小)     |
+| `priceWithTaxMax` | number   | 税込価格 (最大)     |
+| `categories`      | string[] | カテゴリ名          |
+| `name`            | string   | メニュー名          |
+| `calorieMin`      | number   | エネルギー (最小)   |
+| `calorieMax`      | number   | エネルギー (最大)   |
+| `saltMin`         | number   | 食塩相当量 (最小)   |
+| `saltMax`         | number   | 食塩相当量 (最大)   |
+| `genres`          | string[] | ジャンル名          |
+| `excludedMenuIds` | number[] | 除外するメニュー ID |
 
 ### `Menu`
 
