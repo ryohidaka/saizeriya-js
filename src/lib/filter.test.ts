@@ -47,6 +47,13 @@ const mockMenus: Menu[] = [
 ];
 
 describe("getFilteredMenus", () => {
+  // 除外メニューのフィルタリング
+  it("税抜価格フィルタリングのテスト", () => {
+    const params: SaizeriyaMenuParams = { excludedMenuIds: [1202] };
+    const result = getFilteredMenus(mockMenus, params);
+    expect(result).toEqual([mockMenus[1], mockMenus[2]]);
+  });
+
   // 税抜価格フィルタリング
   it("税抜価格フィルタリングのテスト", () => {
     const params: SaizeriyaMenuParams = { priceMin: 100, priceMax: 300 };

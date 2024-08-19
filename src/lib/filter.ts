@@ -25,9 +25,11 @@ export function getFilteredMenus(
     saltMin,
     saltMax,
     genres,
+    excludedMenuIds,
   } = params;
 
   return menus
+    .filter((menu) => !excludedMenuIds?.includes(menu.id))
     .filter((menu) => filterByPrice(menu, priceMin, priceMax))
     .filter((menu) =>
       filterByPriceWithTax(menu, priceWithTaxMin, priceWithTaxMax),

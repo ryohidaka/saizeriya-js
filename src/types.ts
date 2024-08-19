@@ -67,6 +67,8 @@ export type SaizeriyaMenuParams = {
   saltMax?: number;
   // ジャンル名
   genres?: string[];
+  // 除外するメニューIDリスト
+  excludedMenuIds?: number[];
 };
 
 /**
