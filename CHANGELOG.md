@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/ryohidaka/saizeriya/compare/v0.2.1...v0.3.0) (2024-08-19)
+
+
+### Features
+
+* 任意のメニューを除外できるように変更 ([26e5083](https://github.com/ryohidaka/saizeriya/commit/26e5083087bbd7ed0b7cfa121c682e8ef3ab5fc3))
+
 ## [0.2.1](https://github.com/ryohidaka/saizeriya/compare/v0.2.0...v0.2.1) (2024-08-18)
 
 
