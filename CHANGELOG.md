@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/ryohidaka/saizeriya/compare/v0.3.0...v0.3.1) (2024-08-19)
+
+
+### Miscellaneous Chores
+
+* release 0.3.1 ([047e364](https://github.com/ryohidaka/saizeriya/commit/047e3647042ef74fdd2a1c73295c412b9b070e5c))
+
 ## [0.3.0](https://github.com/ryohidaka/saizeriya/compare/v0.2.1...v0.3.0) (2024-08-19)
 
 
