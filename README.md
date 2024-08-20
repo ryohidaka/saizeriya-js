@@ -123,20 +123,21 @@ const randomMenus = await saizeriya.random();
 
 ### `Menu`
 
-| フィールド     | 型     | 説明                         | サンプル         |
-| -------------- | ------ | ---------------------------- | ---------------- |
-| `id`           | number | メニュー ID                  | `1202`           |
-| `name`         | string | メニュー名                   | `小エビのサラダ` |
-| `nameEn`       | string | メニュー名（英語）           | `Shrimp Salad`   |
-| `nameZh`       | string | メニュー名（中国語）         | `小甜虾沙拉`     |
-| `price`        | number | 税抜価格                     | `319`            |
-| `priceWithTax` | number | 税込価格                     | `350`            |
-| `calorie`      | number | エネルギー (カロリー) (kcal) | `192`            |
-| `salt`         | number | 食塩相当量 (g)               | `1.5`            |
-| `genre`        | Genre  | ジャンル名                   | `サラダ`         |
-| `category`     | string | カテゴリ名                   | `グランド`       |
-| `categoryEn`   | string | カテゴリ名（英語）           | `Grand Menu`     |
-| `categoryZh`   | string | カテゴリ名（中国語）         | `主`             |
+| フィールド     | 型      | 説明                         | サンプル         |
+| -------------- | ------- | ---------------------------- | ---------------- |
+| `id`           | number  | メニュー ID                  | `1202`           |
+| `name`         | string  | メニュー名                   | `小エビのサラダ` |
+| `nameEn`       | string  | メニュー名（英語）           | `Shrimp Salad`   |
+| `nameZh`       | string  | メニュー名（中国語）         | `小甜虾沙拉`     |
+| `price`        | number  | 税抜価格                     | `319`            |
+| `priceWithTax` | number  | 税込価格                     | `350`            |
+| `calorie`      | number  | エネルギー (カロリー) (kcal) | `192`            |
+| `salt`         | number  | 食塩相当量 (g)               | `1.5`            |
+| `genre`        | Genre   | ジャンル名                   | `サラダ`         |
+| `category`     | string  | カテゴリ名                   | `グランド`       |
+| `categoryEn`   | string  | カテゴリ名（英語）           | `Grand Menu`     |
+| `categoryZh`   | string  | カテゴリ名（中国語）         | `主`             |
+| `isAlcohol`    | boolean | アルコールフラグ             | `true`           |
 
 ### `Category`
 

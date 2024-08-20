@@ -22,6 +22,8 @@ export type Menu = {
   salt?: number;
   // ジャンル名
   genre: Genre;
+  // アルコールフラグ
+  isAlcohol: boolean;
 } & Category;
 
 /**

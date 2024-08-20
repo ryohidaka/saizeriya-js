@@ -35,6 +35,7 @@ describe("Saizeriya", () => {
       categoryZh: "主",
       genre: "サラダ",
       id: 1202,
+      isAlcohol: false,
       name: "小エビのサラダ",
       nameEn: "Shrimp Salad",
       nameZh: "小甜虾沙拉",
