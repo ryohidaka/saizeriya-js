@@ -71,6 +71,8 @@ export type SaizeriyaMenuParams = {
   genres?: string[];
   // 除外するメニューIDリスト
   excludedMenuIds?: number[];
+  // アルコール類を除外するフラグ
+  excludeAlcohol?: boolean;
 };
 
 /**

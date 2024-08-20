@@ -88,7 +88,7 @@ export async function FilterForm({
           </div>
         </div>
 
-         <div class="col">
+        <div class="col">
           <label for="saltMin" class="form-label">塩分最小</label>
           <div class="input-group mb-3">
             <input id="saltMin" type="number" class="form-control" placeholder="0" />
@@ -101,6 +101,15 @@ export async function FilterForm({
           <div class="input-group mb-3">
             <input id="saltMax" type="number" class="form-control" placeholder="0" />
             <span class="input-group-text">g</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="excludeAlcohol">
+            <label class="form-check-label" for="excludeAlcohol">アルコールを除く</label>
           </div>
         </div>
       </div>
@@ -127,7 +136,6 @@ export async function FilterForm({
       document.querySelector<HTMLInputElement>("#priceMax")?.valueAsNumber ||
       undefined;
 
-    // Handle empty categories and genres
     const categoriesInput = document
       .querySelector<HTMLInputElement>("#categories")
       ?.value.trim();
@@ -165,6 +173,10 @@ export async function FilterForm({
             .filter((gen) => gen.length > 0)
         : undefined;
 
+    const excludeAlcohol =
+      document.querySelector<HTMLInputElement>("#excludeAlcohol")?.checked ||
+      false;
+
     const params: SaizeriyaMenuParams = {
       priceMin,
       priceMax,
@@ -175,6 +187,7 @@ export async function FilterForm({
       saltMin,
       saltMax,
       genres,
+      excludeAlcohol,
     };
     onFilter(params);
   }

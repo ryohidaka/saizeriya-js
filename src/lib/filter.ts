@@ -26,6 +26,7 @@ export function getFilteredMenus(
     saltMax,
     genres,
     excludedMenuIds,
+    excludeAlcohol,
   } = params;
 
   return menus
@@ -38,7 +39,8 @@ export function getFilteredMenus(
     .filter((menu) => filterByName(menu, name))
     .filter((menu) => filterByCalorie(menu, calorieMin, calorieMax))
     .filter((menu) => filterBySalt(menu, saltMin, saltMax))
-    .filter((menu) => filterByGenre(menu, genres));
+    .filter((menu) => filterByGenre(menu, genres))
+    .filter((menu) => !excludeAlcohol || !menu.isAlcohol);
 }
 
 /**
