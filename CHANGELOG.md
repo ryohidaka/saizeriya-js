@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.4.0](https://github.com/ryohidaka/saizeriya-js/compare/v0.3.1...v0.4.0) (2024-08-20)
+
+
+### Features
+
+* アルコールフラグ (`isAlcohol`)を追加 ([de77f3f](https://github.com/ryohidaka/saizeriya-js/commit/de77f3f8ff0c5a5cb7e8119bb34049f1c8feae0a))
+* アルコール類除外処理を追加 ([ac22e60](https://github.com/ryohidaka/saizeriya-js/commit/ac22e60e2bb920a1f8089296dadd7656a2cfc14b))
+* リポジトリ名を変更 ([fe8506c](https://github.com/ryohidaka/saizeriya-js/commit/fe8506c17a7d87bbc749aaacf441d85446a9e231))
+
 ## [0.3.1](https://github.com/ryohidaka/saizeriya-js/compare/v0.3.0...v0.3.1) (2024-08-19)
 
 
