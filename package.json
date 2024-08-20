@@ -32,14 +32,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryohidaka/saizeriya.git"
+    "url": "git+https://github.com/ryohidaka/saizeriya-js.git"
   },
   "author": "ryohidaka <39184410+ryohidaka@users.noreply.github.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ryohidaka/saizeriya/issues"
+    "url": "https://github.com/ryohidaka/saizeriya-js/issues"
   },
-  "homepage": "https://github.com/ryohidaka/saizeriya#readme",
+  "homepage": "https://github.com/ryohidaka/saizeriya-js#readme",
   "devDependencies": {
     "@types/node": "^22.3.0",
     "@vitest/coverage-v8": "^2.0.5",

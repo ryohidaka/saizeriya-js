@@ -1,8 +1,8 @@
 # saizeriya
 
 [![npm version](https://badge.fury.io/js/saizeriya.svg)](https://badge.fury.io/js/saizeriya)
-![build](https://github.com/ryohidaka/saizeriya/workflows/Build/badge.svg)
-[![codecov](https://codecov.io/gh/ryohidaka/saizeriya/graph/badge.svg?token=RHP9TB2F51)](https://codecov.io/gh/ryohidaka/saizeriya)
+![build](https://github.com/ryohidaka/saizeriya-js/workflows/Build/badge.svg)
+[![codecov](https://codecov.io/gh/ryohidaka/saizeriya-js/graph/badge.svg?token=RHP9TB2F51)](https://codecov.io/gh/ryohidaka/saizeriya-js)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
