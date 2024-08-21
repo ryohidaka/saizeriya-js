@@ -24,6 +24,8 @@ export type Menu = {
   genre: Genre;
   // アルコールフラグ
   isAlcohol: boolean;
+  // アイコン
+  icon: string;
 } & Category;
 
 /**

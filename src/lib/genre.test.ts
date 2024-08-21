@@ -17,6 +17,7 @@ const mockMenus: Menu[] = [
     price: 319,
     priceWithTax: 350,
     salt: 1.5,
+    icon: "🍤",
   },
   {
     calorie: 154,
@@ -32,6 +33,7 @@ const mockMenus: Menu[] = [
     price: 137,
     priceWithTax: 150,
     salt: 1,
+    icon: "🥣",
   },
 ];
 

@@ -42,6 +42,7 @@ describe("Saizeriya", () => {
       price: 319,
       priceWithTax: 350,
       salt: 1.5,
+      icon: "🍤",
     });
   });
 

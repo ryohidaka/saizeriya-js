@@ -24,6 +24,7 @@ export async function MenuTable({ params }: MenuTableProps) {
           <th scope="col">カテゴリ名</th>
           <th scope="col">ジャンル名</th>
           <th scope="col">アルコールフラグ</th>
+          <th scope="col">アイコン</th>
         </tr>
       </thead>
       <tbody id="menu-table">
@@ -40,6 +41,7 @@ export async function MenuTable({ params }: MenuTableProps) {
             <td>${menu.category}</td>
             <td>${menu.genre}</td>
             <td>${menu.isAlcohol}</td>
+            <td>${menu.icon}</td>
           </tr>
         `,
           )
