@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/ryohidaka/saizeriya-js/compare/v0.4.0...v0.5.0) (2024-08-21)
+
+
+### Features
+
+* Menuにiconを追加 ([6916e4d](https://github.com/ryohidaka/saizeriya-js/commit/6916e4dcafd1b463e460229d000ec020aa2c42ed))
+
 ## [0.4.0](https://github.com/ryohidaka/saizeriya-js/compare/v0.3.1...v0.4.0) (2024-08-20)
 
 
