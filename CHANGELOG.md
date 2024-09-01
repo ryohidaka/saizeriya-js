@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.6.0](https://github.com/ryohidaka/saizeriya-js/compare/v0.5.0...v0.6.0) (2024-09-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* 非同期関数を解除
+
+### Features
+
+* メニューデータを定数化し、取得処理を差し替える ([d544e37](https://github.com/ryohidaka/saizeriya-js/commit/d544e374633084a45904a7b3218e1aaa516cf19a))
+* 非同期関数を解除 ([455d175](https://github.com/ryohidaka/saizeriya-js/commit/455d175928a341ef6eb68fc6f9372645eb98cf4d))
+
 ## [0.5.0](https://github.com/ryohidaka/saizeriya-js/compare/v0.4.0...v0.5.0) (2024-08-21)
 
 
