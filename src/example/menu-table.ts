@@ -5,10 +5,10 @@ type MenuTableProps = {
   params?: SaizeriyaMenuParams;
 };
 
-export async function MenuTable({ params }: MenuTableProps) {
+export function MenuTable({ params }: MenuTableProps) {
   const saizeriya = new Saizeriya();
-  const menus = await saizeriya.all(params);
-  const randomMenus = await saizeriya.random();
+  const menus = saizeriya.all(params);
+  const randomMenus = saizeriya.random();
   console.log(randomMenus);
 
   return `

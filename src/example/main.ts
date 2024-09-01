@@ -9,18 +9,17 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   </div>
 `;
 
-const renderTable = async (params?: SaizeriyaMenuParams) => {
-  document.querySelector<HTMLDivElement>("#menu-table")!.innerHTML =
-    await MenuTable({ params });
+const renderTable = (params?: SaizeriyaMenuParams) => {
+  document.querySelector<HTMLDivElement>("#menu-table")!.innerHTML = MenuTable({
+    params,
+  });
 };
 
-(async () => {
-  const filterFormHtml = await FilterForm({
-    onFilter: renderTable,
-  });
-  document.querySelector<HTMLDivElement>("#filter-form")!.innerHTML =
-    filterFormHtml;
-})();
+const filterFormHtml = FilterForm({
+  onFilter: renderTable,
+});
+document.querySelector<HTMLDivElement>("#filter-form")!.innerHTML =
+  filterFormHtml;
 
 // 初期テーブルの表示
 renderTable();

@@ -27,7 +27,7 @@ export class Saizeriya {
    * @param params - フィルタリングの条件
    * @returns フィルタリングされたメニューの配列
    */
-  async all(params?: SaizeriyaMenuParams): Promise<Menu[]> {
+  all(params?: SaizeriyaMenuParams): Menu[] {
     return getFilteredMenus(this.menus, params);
   }
 
@@ -35,7 +35,7 @@ export class Saizeriya {
    * 全てのカテゴリを取得する
    * @returns カテゴリの配列
    */
-  async categories(): Promise<Category[]> {
+  categories(): Category[] {
     return getCategories(this.menus);
   }
 
@@ -43,7 +43,7 @@ export class Saizeriya {
    * 全てのジャンルを取得する
    * @returns ジャンルの配列
    */
-  async genres(): Promise<string[]> {
+  genres(): string[] {
     return getGenres(this.menus);
   }
 
@@ -52,7 +52,7 @@ export class Saizeriya {
    * @param id - メニューのID
    * @returns 指定したIDのメニュー、見つからない場合はundefined
    */
-  async getById(id: number): Promise<Menu | undefined> {
+  getById(id: number): Menu | undefined {
     return this.menus.find((menu) => menu.id === id);
   }
 
@@ -63,12 +63,12 @@ export class Saizeriya {
    * @param allowDuplicates - 重複許容フラグ (デフォルト: `true`)
    * @returns ランダムな組み合わせ
    */
-  async random(
+  random(
     params?: SaizeriyaMenuParams,
     maxSum: number = 1000,
     allowDuplicates: boolean = true,
-  ): Promise<RandomMenus> {
-    const menus = await this.all(params);
+  ): RandomMenus {
+    const menus = this.all(params);
 
     return getRandomMenus(menus, maxSum, allowDuplicates);
   }

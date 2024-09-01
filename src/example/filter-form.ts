@@ -4,14 +4,12 @@ type FilterFormProps = {
   onFilter: (params: SaizeriyaMenuParams) => void;
 };
 
-export async function FilterForm({
-  onFilter,
-}: FilterFormProps): Promise<string> {
+export function FilterForm({ onFilter }: FilterFormProps): string {
   const saizeriya = new Saizeriya();
-  const menus = await saizeriya.all();
+  const menus = saizeriya.all();
   const menuNames = menus.map((menu) => menu.name);
-  const categories = await saizeriya.categories();
-  const genres = await saizeriya.genres();
+  const categories = saizeriya.categories();
+  const genres = saizeriya.genres();
 
   const formHtml = `
     <div class="mb-3">

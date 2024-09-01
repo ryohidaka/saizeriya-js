@@ -25,30 +25,30 @@ import { Saizeriya } from "saizeriya";
 const saizeriya = new Saizeriya();
 
 // 全てのメニューを取得
-const menus = await saizeriya.all();
+const menus = saizeriya.all();
 
 // 条件を指定してメニューを取得
-const filteredMenus = await saizeriya.all({
+const filteredMenus = saizeriya.all({
   priceMin: 500,
   genres: ["パスタ"],
 });
 
 // カテゴリを取得
-const categories = await saizeriya.categories();
+const categories = saizeriya.categories();
 
 // ジャンルを取得
-const genres = await saizeriya.genres();
+const genres = saizeriya.genres();
 
 // 特定のIDに対応するメニューを取得
-const menu = await saizeriya.getById(1);
+const menu = saizeriya.getById(1);
 
 // ランダムなメニューの組み合わせを取得
-const randomMenus = await saizeriya.random();
+const randomMenus = saizeriya.random();
 ```
 
 ## メソッド
 
-### `all(params?: SaizeriyaMenuParams): Promise<Menu[]>`
+### `all(params?: SaizeriyaMenuParams): Menu[]`
 
 条件に合う全てのメニューの一覧を取得します。
 
@@ -60,7 +60,7 @@ const randomMenus = await saizeriya.random();
 
 - `Menu[]`: メニューの配列
 
-### `categories(): Promise<Category[]>`
+### `categories(): Category[]`
 
 全てのカテゴリを取得します。
 
@@ -68,7 +68,7 @@ const randomMenus = await saizeriya.random();
 
 - `Category[]`: カテゴリの配列
 
-### `genres(): Promise<Genre[]>`
+### `genres(): Genre[]`
 
 全てのジャンルを取得します。
 
@@ -76,7 +76,7 @@ const randomMenus = await saizeriya.random();
 
 - `Genre[]`: ジャンルの配列
 
-### `getById(id: number): Promise<Menu | undefined>`
+### `getById(id: number): Menu | undefined`
 
 指定した ID に対応するメニューを取得します。
 
@@ -88,7 +88,7 @@ const randomMenus = await saizeriya.random();
 
 - `Menu`: メニューオブジェクト。見つからない場合は`undefined`。
 
-### `random(params?: SaizeriyaMenuParams, maxSum: number = 1000, allowDuplicates: boolean = true,): Promise<RandomMenus> `
+### `random(params?: SaizeriyaMenuParams, maxSum: number = 1000, allowDuplicates: boolean = true,): RandomMenus`
 
 指定した総額に対応するランダムなメニューの組み合わせを取得します。
 
