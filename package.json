@@ -24,11 +24,12 @@
     "dev": "vite",
     "build": "tsc && vite build --emptyOutDir false",
     "preview": "vite preview",
-    "prepare": "npx husky install",
+    "prepare": "npx husky install && npm run gen-menus",
     "test": "VITEST_MIN_THREADS=6 VITEST_MAX_THREADS=6 vitest run --passWithNoTests",
     "coverage": "vitest run --coverage",
     "format": "npx prettier . --write",
-    "docs": "npx typedoc"
+    "docs": "npx typedoc",
+    "gen-menus": "node src/scripts/generate-menus.mjs"
   },
   "repository": {
     "type": "git",
@@ -46,6 +47,8 @@
     "eslint": "^9.9.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-n": "^17.10.2",
+    "node-fetch": "^3.3.2",
+    "ts-morph": "^23.0.0",
     "typescript": "^5.5.4",
     "vite": "^5.4.1",
     "vite-plugin-dts": "^4.0.3",

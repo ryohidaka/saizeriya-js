@@ -1,10 +1,10 @@
 import {
-  fetchMenus,
   getCategories,
   getFilteredMenus,
   getGenres,
   getRandomMenus,
 } from "./lib";
+import { MENUS } from "./menus";
 import { Category, Menu, RandomMenus, SaizeriyaMenuParams } from "./types";
 
 /**
@@ -19,15 +19,7 @@ export class Saizeriya {
    * インスタンス生成時にメニューをロードする
    */
   constructor() {
-    this.loadMenus();
-  }
-
-  /**
-   * メニューを非同期でロードする
-   * プライベートメソッド
-   */
-  private async loadMenus() {
-    this.menus = await fetchMenus();
+    this.menus = MENUS;
   }
 
   /**
@@ -36,14 +28,7 @@ export class Saizeriya {
    * @returns フィルタリングされたメニューの配列
    */
   async all(params?: SaizeriyaMenuParams): Promise<Menu[]> {
-    // メニューリストが空の場合、メニューをロードする
-    if (this.menus.length === 0) {
-      await this.loadMenus();
-    }
-
-    let menus = this.menus;
-
-    return getFilteredMenus(menus, params);
+    return getFilteredMenus(this.menus, params);
   }
 
   /**
@@ -51,11 +36,6 @@ export class Saizeriya {
    * @returns カテゴリの配列
    */
   async categories(): Promise<Category[]> {
-    // メニューリストが空の場合、メニューをロードする
-    if (this.menus.length === 0) {
-      await this.loadMenus();
-    }
-
     return getCategories(this.menus);
   }
 
@@ -64,11 +44,6 @@ export class Saizeriya {
    * @returns ジャンルの配列
    */
   async genres(): Promise<string[]> {
-    // メニューリストが空の場合、メニューをロードする
-    if (this.menus.length === 0) {
-      await this.loadMenus();
-    }
-
     return getGenres(this.menus);
   }
 
@@ -78,11 +53,6 @@ export class Saizeriya {
    * @returns 指定したIDのメニュー、見つからない場合はundefined
    */
   async getById(id: number): Promise<Menu | undefined> {
-    // メニューリストが空の場合、メニューをロードする
-    if (this.menus.length === 0) {
-      await this.loadMenus();
-    }
-
     return this.menus.find((menu) => menu.id === id);
   }
 
