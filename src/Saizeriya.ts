@@ -57,6 +57,15 @@ export class Saizeriya {
   }
 
   /**
+   * 指定した旧IDに対応するメニューを取得する
+   * @param preId - メニューの旧ID
+   * @returns 指定した旧IDのメニュー、見つからない場合はundefined
+   */
+  getByPreId(preId: string): Menu | undefined {
+    return this.menus.find((menu) => menu.preId === preId);
+  }
+
+  /**
    * 指定した総額に対応するランダムなメニューの組み合わせを取得する
    * @param params - フィルタリングの条件
    * @param maxSum - 総額の上限 (デフォルト: `1000`)
