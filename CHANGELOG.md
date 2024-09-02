@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.7.0](https://github.com/ryohidaka/saizeriya-js/compare/v0.6.0...v0.7.0) (2024-09-02)
+
+
+### Features
+
+* PreID対応を追加 ([2cd8d9f](https://github.com/ryohidaka/saizeriya-js/commit/2cd8d9ffdbe5e75f2fc2f83c3b0f4bcabbd3866d))
+* 旧IDに対応するメニュー取得処理(`getByPreId()`) を追加 ([ed6f48c](https://github.com/ryohidaka/saizeriya-js/commit/ed6f48c9c8ca3e80bf7135dd83f81c99df8b61ae))
+* 旧ジャンルー取得処理(`preGenres()`) を追加 ([f0581b9](https://github.com/ryohidaka/saizeriya-js/commit/f0581b926783d28f26d6340b44ff442a4f35d92b))
+
 ## [0.6.0](https://github.com/ryohidaka/saizeriya-js/compare/v0.5.0...v0.6.0) (2024-09-01)
 
 
