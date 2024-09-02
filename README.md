@@ -39,8 +39,14 @@ const categories = saizeriya.categories();
 // ジャンルを取得
 const genres = saizeriya.genres();
 
+// 旧ジャンルを取得
+const preGenres = saizeriya.preGenres();
+
 // 特定のIDに対応するメニューを取得
 const menu = saizeriya.getById(1);
+
+// 特定の旧IDに対応するメニューを取得
+const preMenu = saizeriya.getByPreId("DG01");
 
 // ランダムなメニューの組み合わせを取得
 const randomMenus = saizeriya.random();
@@ -139,6 +145,8 @@ const randomMenus = saizeriya.random();
 | `categoryEn`   | string  | カテゴリ名（英語）           | `Grand Menu`     |
 | `categoryZh`   | string  | カテゴリ名（中国語）         | `主`             |
 | `isAlcohol`    | boolean | アルコールフラグ             | `true`           |
+| `icon`         | string  | アイコン (絵文字)            | `🍤`             |
+| `preId`        | string  | 旧メニュー ID                | `SA02`           |
 
 ### `Category`
 
