@@ -52,6 +52,32 @@ describe("Saizeriya", () => {
     expect(menu).toBeUndefined();
   });
 
+  it("旧IDに対応するメニューを返すこと", () => {
+    const menu = saizeriya.getByPreId("SA02");
+    expect(menu).toEqual({
+      calorie: 192,
+      category: "グランド",
+      categoryEn: "Grand Menu",
+      categoryZh: "主",
+      genre: "サラダ",
+      id: 1202,
+      isAlcohol: false,
+      name: "小エビのサラダ",
+      nameEn: "Shrimp Salad",
+      nameZh: "小甜虾沙拉",
+      price: 319,
+      priceWithTax: 350,
+      salt: 1.5,
+      icon: "🍤",
+      preId: "SA02",
+    });
+  });
+
+  it("存在しない旧IDに対してundefinedを返すこと", () => {
+    const menu = saizeriya.getByPreId("hoge");
+    expect(menu).toBeUndefined();
+  });
+
   it("ランダムな組み合わせを返すこと", () => {
     saizeriya.random();
   });
