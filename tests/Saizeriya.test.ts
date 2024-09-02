@@ -43,6 +43,7 @@ describe("Saizeriya", () => {
       priceWithTax: 350,
       salt: 1.5,
       icon: "🍤",
+      preId: "SA02",
     });
   });
 

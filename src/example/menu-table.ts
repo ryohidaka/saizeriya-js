@@ -25,6 +25,7 @@ export function MenuTable({ params }: MenuTableProps) {
           <th scope="col">ジャンル名</th>
           <th scope="col">アルコールフラグ</th>
           <th scope="col">アイコン</th>
+          <th scope="col">旧メニューID</th>
         </tr>
       </thead>
       <tbody id="menu-table">
@@ -42,6 +43,7 @@ export function MenuTable({ params }: MenuTableProps) {
             <td>${menu.genre}</td>
             <td>${menu.isAlcohol}</td>
             <td>${menu.icon}</td>
+            <td>${menu.preId}</td>
           </tr>
         `,
           )

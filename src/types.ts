@@ -26,6 +26,8 @@ export type Menu = {
   isAlcohol: boolean;
   // アイコン
   icon: string;
+  // 旧ID
+  preId?: string;
 } & Category;
 
 /**

@@ -18,6 +18,7 @@ export const MENUS: Menu[] = [
     genre: "サラダ",
     isAlcohol: false,
     icon: "🍤",
+    preId: "SA02",
   },
   {
     id: 1205,
@@ -34,6 +35,7 @@ export const MENUS: Menu[] = [
     genre: "サラダ",
     isAlcohol: false,
     icon: "🥗",
+    preId: "SA05",
   },
   {
     id: 1207,
@@ -50,6 +52,7 @@ export const MENUS: Menu[] = [
     genre: "サラダ",
     isAlcohol: false,
     icon: "🥗",
+    preId: "SA07",
   },
   {
     id: 1208,
@@ -66,6 +69,7 @@ export const MENUS: Menu[] = [
     genre: "サラダ",
     isAlcohol: false,
     icon: "🥗",
+    preId: "SA08",
   },
   {
     id: 1209,
@@ -82,6 +86,7 @@ export const MENUS: Menu[] = [
     genre: "サラダ",
     isAlcohol: false,
     icon: "🥗",
+    preId: "SA03",
   },
   {
     id: 1301,
@@ -98,6 +103,7 @@ export const MENUS: Menu[] = [
     genre: "スープ",
     isAlcohol: false,
     icon: "🥣",
+    preId: "SU01",
   },
   {
     id: 1305,
@@ -114,6 +120,7 @@ export const MENUS: Menu[] = [
     genre: "スープ",
     isAlcohol: false,
     icon: "🥣",
+    preId: "SU05",
   },
   {
     id: 1307,
@@ -130,6 +137,7 @@ export const MENUS: Menu[] = [
     genre: "スープ",
     isAlcohol: false,
     icon: "🥣",
+    preId: "SU07",
   },
   {
     id: 1401,
@@ -146,6 +154,7 @@ export const MENUS: Menu[] = [
     genre: "前菜・おつまみ",
     isAlcohol: false,
     icon: "🍗",
+    preId: "AA01",
   },
   {
     id: 1402,
@@ -162,6 +171,7 @@ export const MENUS: Menu[] = [
     genre: "前菜・おつまみ",
     isAlcohol: false,
     icon: "🍢",
+    preId: "AA02",
   },
   {
     id: 1403,
@@ -178,6 +188,7 @@ export const MENUS: Menu[] = [
     genre: "前菜・おつまみ",
     isAlcohol: false,
     icon: "🥬",
+    preId: "AA03",
   },
   {
     id: 1404,
@@ -194,6 +205,7 @@ export const MENUS: Menu[] = [
     genre: "前菜・おつまみ",
     isAlcohol: false,
     icon: "🍤",
+    preId: "AA04",
   },
   {
     id: 1405,
@@ -210,6 +222,7 @@ export const MENUS: Menu[] = [
     genre: "前菜・おつまみ",
     isAlcohol: false,
     icon: "🥘",
+    preId: "AA05",
   },
   {
     id: 1406,
@@ -226,6 +239,7 @@ export const MENUS: Menu[] = [
     genre: "前菜・おつまみ",
     isAlcohol: false,
     icon: "🍤",
+    preId: "AA06",
   },
   {
     id: 1407,
@@ -242,6 +256,7 @@ export const MENUS: Menu[] = [
     genre: "前菜・おつまみ",
     isAlcohol: false,
     icon: "🌭",
+    preId: "AA07",
   },
   {
     id: 1408,
@@ -258,6 +273,7 @@ export const MENUS: Menu[] = [
     genre: "前菜・おつまみ",
     isAlcohol: false,
     icon: "🐔",
+    preId: "AA08",
   },
   {
     id: 1410,
@@ -274,6 +290,7 @@ export const MENUS: Menu[] = [
     genre: "前菜・おつまみ",
     isAlcohol: false,
     icon: "🦪",
+    preId: "AA10",
   },
   {
     id: 1411,
@@ -290,6 +307,7 @@ export const MENUS: Menu[] = [
     genre: "前菜・おつまみ",
     isAlcohol: false,
     icon: "🥗",
+    preId: "AA09",
   },
   {
     id: 1413,
@@ -306,6 +324,7 @@ export const MENUS: Menu[] = [
     genre: "前菜・おつまみ",
     isAlcohol: false,
     icon: "🥕",
+    preId: "AA13",
   },
   {
     id: 1414,
@@ -322,6 +341,7 @@ export const MENUS: Menu[] = [
     genre: "前菜・おつまみ",
     isAlcohol: false,
     icon: "🍅",
+    preId: "AA14",
   },
   {
     id: 1415,
@@ -338,6 +358,7 @@ export const MENUS: Menu[] = [
     genre: "前菜・おつまみ",
     isAlcohol: false,
     icon: "🥔",
+    preId: "AA15",
   },
   {
     id: 1422,
@@ -354,6 +375,7 @@ export const MENUS: Menu[] = [
     genre: "前菜・おつまみ",
     isAlcohol: false,
     icon: "🍖",
+    preId: "AA22",
   },
   {
     id: 1423,
@@ -370,6 +392,7 @@ export const MENUS: Menu[] = [
     genre: "前菜・おつまみ",
     isAlcohol: false,
     icon: "🧀",
+    preId: "",
   },
   {
     id: 1425,
@@ -386,6 +409,7 @@ export const MENUS: Menu[] = [
     genre: "前菜・おつまみ",
     isAlcohol: false,
     icon: "🫛",
+    preId: "AA06",
   },
   {
     id: 1452,
@@ -402,6 +426,7 @@ export const MENUS: Menu[] = [
     genre: "前菜・おつまみ",
     isAlcohol: false,
     icon: "🍢",
+    preId: "AA52",
   },
   {
     id: 2101,
@@ -418,6 +443,7 @@ export const MENUS: Menu[] = [
     genre: "ドリア&グラタン",
     isAlcohol: false,
     icon: "🥘",
+    preId: "DG01",
   },
   {
     id: 2103,
@@ -434,6 +460,7 @@ export const MENUS: Menu[] = [
     genre: "ドリア&グラタン",
     isAlcohol: false,
     icon: "🥘",
+    preId: "DG03",
   },
   {
     id: 2106,
@@ -450,6 +477,7 @@ export const MENUS: Menu[] = [
     genre: "ドリア&グラタン",
     isAlcohol: false,
     icon: "🥘",
+    preId: "DG06",
   },
   {
     id: 2108,
@@ -466,6 +494,7 @@ export const MENUS: Menu[] = [
     genre: "ドリア&グラタン",
     isAlcohol: false,
     icon: "🥘",
+    preId: "DG08",
   },
   {
     id: 2109,
@@ -482,6 +511,7 @@ export const MENUS: Menu[] = [
     genre: "ドリア&グラタン",
     isAlcohol: false,
     icon: "🥘",
+    preId: "",
   },
   {
     id: 2203,
@@ -498,6 +528,7 @@ export const MENUS: Menu[] = [
     genre: "ピザ",
     isAlcohol: false,
     icon: "🍕",
+    preId: "PZ02",
   },
   {
     id: 2204,
@@ -514,6 +545,7 @@ export const MENUS: Menu[] = [
     genre: "ピザ",
     isAlcohol: false,
     icon: "🍕",
+    preId: "PZ04",
   },
   {
     id: 2206,
@@ -530,6 +562,7 @@ export const MENUS: Menu[] = [
     genre: "ピザ",
     isAlcohol: false,
     icon: "🍕",
+    preId: "PZ06",
   },
   {
     id: 2208,
@@ -546,6 +579,7 @@ export const MENUS: Menu[] = [
     genre: "ピザ",
     isAlcohol: false,
     icon: "🍕",
+    preId: "PZ08",
   },
   {
     id: 2303,
@@ -562,6 +596,7 @@ export const MENUS: Menu[] = [
     genre: "パスタ",
     isAlcohol: false,
     icon: "🍝",
+    preId: "PA03",
   },
   {
     id: 2304,
@@ -578,6 +613,7 @@ export const MENUS: Menu[] = [
     genre: "パスタ",
     isAlcohol: false,
     icon: "🍝",
+    preId: "PA04",
   },
   {
     id: 2305,
@@ -594,6 +630,7 @@ export const MENUS: Menu[] = [
     genre: "パスタ",
     isAlcohol: false,
     icon: "🍝",
+    preId: "PA05",
   },
   {
     id: 2306,
@@ -610,6 +647,7 @@ export const MENUS: Menu[] = [
     genre: "パスタ",
     isAlcohol: false,
     icon: "🍝",
+    preId: "PA02",
   },
   {
     id: 2310,
@@ -626,6 +664,7 @@ export const MENUS: Menu[] = [
     genre: "パスタ",
     isAlcohol: false,
     icon: "🍝",
+    preId: "PA10",
   },
   {
     id: 2316,
@@ -642,6 +681,7 @@ export const MENUS: Menu[] = [
     genre: "パスタ",
     isAlcohol: false,
     icon: "🍝",
+    preId: "PA12",
   },
   {
     id: 2317,
@@ -658,6 +698,7 @@ export const MENUS: Menu[] = [
     genre: "パスタ",
     isAlcohol: false,
     icon: "🍝",
+    preId: "PA17",
   },
   {
     id: 2320,
@@ -674,6 +715,7 @@ export const MENUS: Menu[] = [
     genre: "パスタ",
     isAlcohol: false,
     icon: "🍝",
+    preId: "PA20",
   },
   {
     id: 2321,
@@ -690,6 +732,7 @@ export const MENUS: Menu[] = [
     genre: "パスタ",
     isAlcohol: false,
     icon: "🍝",
+    preId: "",
   },
   {
     id: 2325,
@@ -706,6 +749,7 @@ export const MENUS: Menu[] = [
     genre: "パスタ",
     isAlcohol: false,
     icon: "🍝",
+    preId: "PA25",
   },
   {
     id: 2328,
@@ -722,6 +766,7 @@ export const MENUS: Menu[] = [
     genre: "パスタ",
     isAlcohol: false,
     icon: "🍝",
+    preId: "",
   },
   {
     id: 2402,
@@ -738,6 +783,7 @@ export const MENUS: Menu[] = [
     genre: "ハンバーグ",
     isAlcohol: false,
     icon: "🐔",
+    preId: "MT02",
   },
   {
     id: 2403,
@@ -754,6 +800,7 @@ export const MENUS: Menu[] = [
     genre: "ハンバーグ",
     isAlcohol: false,
     icon: "🍖",
+    preId: "MT03",
   },
   {
     id: 2404,
@@ -770,6 +817,7 @@ export const MENUS: Menu[] = [
     genre: "ハンバーグ",
     isAlcohol: false,
     icon: "🐔",
+    preId: "MT04",
   },
   {
     id: 2406,
@@ -786,6 +834,7 @@ export const MENUS: Menu[] = [
     genre: "ハンバーグ",
     isAlcohol: false,
     icon: "🍖",
+    preId: "MT01",
   },
   {
     id: 2407,
@@ -802,6 +851,7 @@ export const MENUS: Menu[] = [
     genre: "ハンバーグ",
     isAlcohol: false,
     icon: "🍖",
+    preId: "MT07",
   },
   {
     id: 2413,
@@ -818,6 +868,7 @@ export const MENUS: Menu[] = [
     genre: "ハンバーグ",
     isAlcohol: false,
     icon: "🍖",
+    preId: "MT13",
   },
   {
     id: 2418,
@@ -834,6 +885,7 @@ export const MENUS: Menu[] = [
     genre: "ハンバーグ",
     isAlcohol: false,
     icon: "🍖",
+    preId: "",
   },
   {
     id: 3101,
@@ -850,6 +902,7 @@ export const MENUS: Menu[] = [
     genre: "ライス・パン",
     isAlcohol: false,
     icon: "🍚",
+    preId: "RP01",
   },
   {
     id: 3102,
@@ -866,6 +919,7 @@ export const MENUS: Menu[] = [
     genre: "ライス・パン",
     isAlcohol: false,
     icon: "🍚",
+    preId: "RP02",
   },
   {
     id: 3103,
@@ -882,6 +936,7 @@ export const MENUS: Menu[] = [
     genre: "ライス・パン",
     isAlcohol: false,
     icon: "🍚",
+    preId: "RP03",
   },
   {
     id: 3104,
@@ -898,6 +953,7 @@ export const MENUS: Menu[] = [
     genre: "ライス・パン",
     isAlcohol: false,
     icon: "🍞",
+    preId: "RP04",
   },
   {
     id: 3106,
@@ -914,6 +970,7 @@ export const MENUS: Menu[] = [
     genre: "ライス・パン",
     isAlcohol: false,
     icon: "🍞",
+    preId: "RP06",
   },
   {
     id: 3108,
@@ -930,6 +987,7 @@ export const MENUS: Menu[] = [
     genre: "ライス・パン",
     isAlcohol: false,
     icon: "🥖",
+    preId: "RP08",
   },
   {
     id: 3109,
@@ -946,6 +1004,7 @@ export const MENUS: Menu[] = [
     genre: "ライス・パン",
     isAlcohol: false,
     icon: "🥖",
+    preId: "RP09",
   },
   {
     id: 3201,
@@ -962,6 +1021,7 @@ export const MENUS: Menu[] = [
     genre: "デザート (すぐに)",
     isAlcohol: false,
     icon: "🧁",
+    preId: "DE01",
   },
   {
     id: 3204,
@@ -978,6 +1038,7 @@ export const MENUS: Menu[] = [
     genre: "デザート (すぐに)",
     isAlcohol: false,
     icon: "🍨",
+    preId: "DE04",
   },
   {
     id: 3205,
@@ -994,6 +1055,7 @@ export const MENUS: Menu[] = [
     genre: "デザート (すぐに)",
     isAlcohol: false,
     icon: "🍨",
+    preId: "DE05",
   },
   {
     id: 3206,
@@ -1010,6 +1072,7 @@ export const MENUS: Menu[] = [
     genre: "デザート (すぐに)",
     isAlcohol: false,
     icon: "🍮",
+    preId: "DE06",
   },
   {
     id: 3207,
@@ -1026,6 +1089,7 @@ export const MENUS: Menu[] = [
     genre: "デザート (すぐに)",
     isAlcohol: false,
     icon: "🍰",
+    preId: "DE07",
   },
   {
     id: 3212,
@@ -1042,6 +1106,7 @@ export const MENUS: Menu[] = [
     genre: "デザート (すぐに)",
     isAlcohol: false,
     icon: "🍮",
+    preId: "DE12",
   },
   {
     id: 3213,
@@ -1058,6 +1123,7 @@ export const MENUS: Menu[] = [
     genre: "デザート (すぐに)",
     isAlcohol: false,
     icon: "🍨",
+    preId: "DE13",
   },
   {
     id: 3215,
@@ -1074,6 +1140,7 @@ export const MENUS: Menu[] = [
     genre: "デザート (すぐに)",
     isAlcohol: false,
     icon: "🍨",
+    preId: "DE15",
   },
   {
     id: 3301,
@@ -1090,6 +1157,7 @@ export const MENUS: Menu[] = [
     genre: "ビール・サワー・ノンアルコール",
     isAlcohol: true,
     icon: "🍺",
+    preId: "BR01",
   },
   {
     id: 3302,
@@ -1106,6 +1174,7 @@ export const MENUS: Menu[] = [
     genre: "ビール・サワー・ノンアルコール",
     isAlcohol: true,
     icon: "🍺",
+    preId: "BR02",
   },
   {
     id: 3303,
@@ -1122,6 +1191,7 @@ export const MENUS: Menu[] = [
     genre: "ビール・サワー・ノンアルコール",
     isAlcohol: false,
     icon: "🍺",
+    preId: "",
   },
   {
     id: 3304,
@@ -1138,6 +1208,7 @@ export const MENUS: Menu[] = [
     genre: "ビール・サワー・ノンアルコール",
     isAlcohol: true,
     icon: "🍺",
+    preId: "BR04",
   },
   {
     id: 3401,
@@ -1154,6 +1225,7 @@ export const MENUS: Menu[] = [
     genre: "ワイン",
     isAlcohol: true,
     icon: "🍷",
+    preId: "WN01",
   },
   {
     id: 3402,
@@ -1170,6 +1242,7 @@ export const MENUS: Menu[] = [
     genre: "ワイン",
     isAlcohol: true,
     icon: "🍷",
+    preId: "WN02",
   },
   {
     id: 3403,
@@ -1186,6 +1259,7 @@ export const MENUS: Menu[] = [
     genre: "ワイン",
     isAlcohol: true,
     icon: "🍷",
+    preId: "WN03",
   },
   {
     id: 3404,
@@ -1202,6 +1276,7 @@ export const MENUS: Menu[] = [
     genre: "ワイン",
     isAlcohol: true,
     icon: "🍷",
+    preId: "WN04",
   },
   {
     id: 3405,
@@ -1218,6 +1293,7 @@ export const MENUS: Menu[] = [
     genre: "ワイン",
     isAlcohol: true,
     icon: "🍷",
+    preId: "WN05",
   },
   {
     id: 3406,
@@ -1234,6 +1310,7 @@ export const MENUS: Menu[] = [
     genre: "ワイン",
     isAlcohol: true,
     icon: "🍷",
+    preId: "WN06",
   },
   {
     id: 3407,
@@ -1250,6 +1327,7 @@ export const MENUS: Menu[] = [
     genre: "ワイン",
     isAlcohol: true,
     icon: "🍾",
+    preId: "WN07",
   },
   {
     id: 3408,
@@ -1266,6 +1344,7 @@ export const MENUS: Menu[] = [
     genre: "ワイン",
     isAlcohol: true,
     icon: "🍾",
+    preId: "WN08",
   },
   {
     id: 3412,
@@ -1282,6 +1361,7 @@ export const MENUS: Menu[] = [
     genre: "ワイン",
     isAlcohol: true,
     icon: "🍾",
+    preId: "WN12",
   },
   {
     id: 3413,
@@ -1298,6 +1378,7 @@ export const MENUS: Menu[] = [
     genre: "ワイン",
     isAlcohol: true,
     icon: "🍾",
+    preId: "WN13",
   },
   {
     id: 3414,
@@ -1314,6 +1395,7 @@ export const MENUS: Menu[] = [
     genre: "ワイン",
     isAlcohol: true,
     icon: "🍾",
+    preId: "WN14",
   },
   {
     id: 3415,
@@ -1330,6 +1412,7 @@ export const MENUS: Menu[] = [
     genre: "ワイン",
     isAlcohol: true,
     icon: "🍾",
+    preId: "WN15",
   },
   {
     id: 3416,
@@ -1346,6 +1429,7 @@ export const MENUS: Menu[] = [
     genre: "ワイン",
     isAlcohol: true,
     icon: "🍾",
+    preId: "WN16",
   },
   {
     id: 3419,
@@ -1362,6 +1446,7 @@ export const MENUS: Menu[] = [
     genre: "ワイン",
     isAlcohol: true,
     icon: "🍾",
+    preId: "WN19",
   },
   {
     id: 3901,
@@ -1378,6 +1463,7 @@ export const MENUS: Menu[] = [
     genre: "デザート (あとで)",
     isAlcohol: false,
     icon: "🧁",
+    preId: "DE01",
   },
   {
     id: 3904,
@@ -1394,6 +1480,7 @@ export const MENUS: Menu[] = [
     genre: "デザート (あとで)",
     isAlcohol: false,
     icon: "🍨",
+    preId: "DE04",
   },
   {
     id: 3905,
@@ -1410,6 +1497,7 @@ export const MENUS: Menu[] = [
     genre: "デザート (あとで)",
     isAlcohol: false,
     icon: "🍨",
+    preId: "DE05",
   },
   {
     id: 3906,
@@ -1426,6 +1514,7 @@ export const MENUS: Menu[] = [
     genre: "デザート (あとで)",
     isAlcohol: false,
     icon: "🍮",
+    preId: "DE06",
   },
   {
     id: 3907,
@@ -1442,6 +1531,7 @@ export const MENUS: Menu[] = [
     genre: "デザート (あとで)",
     isAlcohol: false,
     icon: "🍰",
+    preId: "DE07",
   },
   {
     id: 3912,
@@ -1458,6 +1548,7 @@ export const MENUS: Menu[] = [
     genre: "デザート (あとで)",
     isAlcohol: false,
     icon: "🍮",
+    preId: "DE12",
   },
   {
     id: 3913,
@@ -1474,6 +1565,7 @@ export const MENUS: Menu[] = [
     genre: "デザート (あとで)",
     isAlcohol: false,
     icon: "🍨",
+    preId: "DE13",
   },
   {
     id: 3915,
@@ -1490,6 +1582,7 @@ export const MENUS: Menu[] = [
     genre: "デザート (あとで)",
     isAlcohol: false,
     icon: "🍨",
+    preId: "DE15",
   },
   {
     id: 4301,
@@ -1506,6 +1599,7 @@ export const MENUS: Menu[] = [
     genre: "トッピング",
     isAlcohol: false,
     icon: "🥚",
+    preId: "TP01",
   },
   {
     id: 4304,
@@ -1522,6 +1616,7 @@ export const MENUS: Menu[] = [
     genre: "トッピング",
     isAlcohol: false,
     icon: "🥗",
+    preId: "TP04",
   },
   {
     id: 4307,
@@ -1538,6 +1633,7 @@ export const MENUS: Menu[] = [
     genre: "トッピング",
     isAlcohol: false,
     icon: "🧀",
+    preId: "TP07",
   },
   {
     id: 5101,
@@ -1554,6 +1650,7 @@ export const MENUS: Menu[] = [
     genre: "ドリンクバー",
     isAlcohol: false,
     icon: "🥤",
+    preId: "DB01",
   },
   {
     id: 5102,
@@ -1570,6 +1667,7 @@ export const MENUS: Menu[] = [
     genre: "ドリンクバー",
     isAlcohol: false,
     icon: "🥤",
+    preId: "DB02",
   },
   {
     id: 5103,
@@ -1586,5 +1684,6 @@ export const MENUS: Menu[] = [
     genre: "ドリンクバー",
     isAlcohol: false,
     icon: "🥤",
+    preId: "DB03",
   },
 ];
