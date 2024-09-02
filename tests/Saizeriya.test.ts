@@ -26,6 +26,10 @@ describe("Saizeriya", () => {
     saizeriya.genres();
   });
 
+  it("全ての旧ジャンルを返すこと", () => {
+    saizeriya.preGenres();
+  });
+
   it("IDに対応するメニューを返すこと", () => {
     const menu = saizeriya.getById(1202);
     expect(menu).toEqual({
