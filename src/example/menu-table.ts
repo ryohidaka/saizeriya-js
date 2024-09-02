@@ -11,6 +11,9 @@ export function MenuTable({ params }: MenuTableProps) {
   const randomMenus = saizeriya.random();
   console.log(randomMenus);
 
+  const preGenres = saizeriya.preGenres();
+  console.log(preGenres);
+
   return `
     <table class="table table-striped">
       <thead>

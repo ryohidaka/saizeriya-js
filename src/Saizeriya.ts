@@ -2,6 +2,7 @@ import {
   getCategories,
   getFilteredMenus,
   getGenres,
+  getPreGenres,
   getRandomMenus,
 } from "./lib";
 import { MENUS } from "./menus";
@@ -45,6 +46,14 @@ export class Saizeriya {
    */
   genres(): string[] {
     return getGenres(this.menus);
+  }
+
+  /**
+   * 全ての旧ジャンルを取得する
+   * @returns 旧ジャンルの配列
+   */
+  preGenres(): string[] {
+    return getPreGenres(this.menus);
   }
 
   /**
