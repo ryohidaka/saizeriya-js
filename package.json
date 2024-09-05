@@ -56,7 +56,7 @@
     "vitest": "^2.0.5"
   },
   "dependencies": {
-    "items-picker": "^0.1.0",
+    "items-picker": "^0.1.1",
     "ts-case-convert": "^2.0.7"
   }
 }
