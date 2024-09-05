@@ -17,7 +17,7 @@ export function getGenres(menus: Menu[]): Genre[] {
  * メニューから旧ジャンルの一覧を取得する関数
  *
  * @param menus - メニューの配列
- * @returns メニューに含まれるジャンルの配列
+ * @returns メニューに含まれる旧ジャンルの配列
  */
 export function getPreGenres(menus: Menu[]): Genre[] {
   // メニューからpreIdが存在するものの先頭2文字を取得し、Setで重複を排除

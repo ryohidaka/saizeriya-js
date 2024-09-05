@@ -7,7 +7,7 @@ import { getRandomCombination } from "items-picker";
  * @param menus - メニューの配列
  * @param maxSum - 総額の上限
  * @param allowDuplicates - 重複許容フラグ
- * @returns メニューに含まれるジャンルの配列
+ * @returns ランダムな組み合わせのオブジェクト
  */
 export function getRandomMenus(
   menus: Menu[],
