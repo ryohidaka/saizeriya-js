@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.8.0](https://github.com/ryohidaka/saizeriya-js/compare/v0.7.0...v0.8.0) (2024-09-05)
+
+
+### Features
+
+* items-picker を更新 ([28655a4](https://github.com/ryohidaka/saizeriya-js/commit/28655a459284aa6c3f0408041778dfdcb5e24027))
+
+
+### Bug Fixes
+
+* コメントを修正 ([b6b0585](https://github.com/ryohidaka/saizeriya-js/commit/b6b05858750d699fbeada5eb60f9920bd92a0469))
+
 ## [0.7.0](https://github.com/ryohidaka/saizeriya-js/compare/v0.6.0...v0.7.0) (2024-09-02)
 
 
