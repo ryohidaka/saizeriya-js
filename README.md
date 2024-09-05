@@ -144,7 +144,7 @@ const randomMenus = saizeriya.random();
 | `category`     | string  | カテゴリ名                   | `グランド`       |
 | `categoryEn`   | string  | カテゴリ名（英語）           | `Grand Menu`     |
 | `categoryZh`   | string  | カテゴリ名（中国語）         | `主`             |
-| `isAlcohol`    | boolean | アルコールフラグ             | `true`           |
+| `isAlcohol`    | boolean | アルコールフラグ             | `false`          |
 | `icon`         | string  | アイコン (絵文字)            | `🍤`             |
 | `preId`        | string  | 旧メニュー ID                | `SA02`           |
 
