@@ -24,16 +24,9 @@ jobs:
       - name: Generate Docs
         run: npm run docs
 
-      - name: Check for changes
-        id: changes
-        run: |
-          git add docs
-          git diff --cached --quiet || echo "changed=true" >> $GITHUB_OUTPUT
-
-      - name: Commit files
-        if: steps.changes.outputs.changed == 'true'
-        run: |
-          git config --local user.email "GitHub Actions"
-          git config --local user.name "actions@github.com"
-          git commit -m "docs: Update docs"
-          git push origin main
+      - name: Commit and push changes
+        uses: ryohidaka/action-commit-push@v0.3.0
+        with:
+          files: "docs"
+          commit-message: "docs: Update docs"
+          rebase: true
