@@ -25,7 +25,7 @@ jobs:
         run: npm run docs
 
       - name: Commit and push changes
-        uses: ryohidaka/action-commit-push@v0.3.0
+        uses: ryohidaka/action-commit-push@v0.3.2
         with:
           files: "docs"
           commit-message: "docs: Update docs"
