@@ -48,9 +48,9 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-n": "^17.10.2",
     "node-fetch": "^3.3.2",
-    "ts-morph": "^24.0.0",
+    "ts-morph": "^25.0.0",
     "typescript": "^5.5.4",
-    "vite": "^5.4.1",
+    "vite": "^6.0.7",
     "vite-plugin-dts": "^4.0.3",
     "vite-tsconfig-paths": "^5.0.1",
     "vitest": "^2.0.5"
