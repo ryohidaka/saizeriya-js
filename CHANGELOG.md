@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.0](https://github.com/ryohidaka/saizeriya-js/compare/v0.8.0...v0.9.0) (2025-04-14)
+
+
+### Features
+
+* 全国対象フラグ, 関西以西対象フラグを追加 ([a0a370f](https://github.com/ryohidaka/saizeriya-js/commit/a0a370f53a30fb4afce494ed874d80f991bef36f))
+
 ## [0.8.0](https://github.com/ryohidaka/saizeriya-js/compare/v0.7.0...v0.8.0) (2024-09-05)
 
 
