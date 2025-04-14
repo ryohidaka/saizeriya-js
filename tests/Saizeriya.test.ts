@@ -48,6 +48,8 @@ describe("Saizeriya", () => {
       salt: 1.5,
       icon: "🍤",
       preId: "SA02",
+      isEast: true,
+      isWest: true,
     });
   });
 
@@ -74,6 +76,8 @@ describe("Saizeriya", () => {
       salt: 1.5,
       icon: "🍤",
       preId: "SA02",
+      isEast: true,
+      isWest: true,
     });
   });
 

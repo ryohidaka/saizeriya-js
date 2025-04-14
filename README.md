@@ -147,6 +147,8 @@ const randomMenus = saizeriya.random();
 | `isAlcohol`    | boolean | アルコールフラグ             | `false`          |
 | `icon`         | string  | アイコン (絵文字)            | `🍤`             |
 | `preId`        | string  | 旧メニュー ID                | `SA02`           |
+| `isEast`       | boolean | 全国対象フラグ               | `true`           |
+| `isWest`       | boolean | 関西以西対象フラグ           | `true`           |
 
 ### `Category`
 

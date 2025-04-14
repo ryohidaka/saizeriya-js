@@ -19,6 +19,8 @@ const mockMenus: Menu[] = [
     salt: 1.5,
     icon: "🍤",
     preId: "SA02",
+    isEast: true,
+    isWest: true,
   },
   {
     calorie: 154,
@@ -36,6 +38,8 @@ const mockMenus: Menu[] = [
     salt: 1,
     icon: "🥣",
     preId: "SU01",
+    isEast: true,
+    isWest: true,
   },
 ];
 

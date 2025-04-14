@@ -28,6 +28,10 @@ export type Menu = {
   icon: string;
   // 旧ID
   preId?: string;
+  // 全国対象フラグ
+  isEast: boolean;
+  // 関西以西対象フラグ
+  isWest: boolean;
 } & Category;
 
 /**
